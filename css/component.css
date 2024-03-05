@@ -721,6 +721,13 @@ button.content-switch::before {
 	height: 500px;
 	opacity: 0.5;
 }
+@media (max-width: 1600px) {
+.slide:first-child .box .pic {
+	width: 350px;
+	height: 250px;
+}
+
+}
 
 .slide:first-child .box p {
 	margin: 0;
