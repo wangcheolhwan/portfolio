@@ -1,0 +1,119 @@
+body {font: 1rem 'Noto Sans KR','Nanum Gothic', 'GmarketSansMedium'; overflow-x: hidden;}
+
+
+header {height: 120px; width: 100%; transition: .3s; overflow: hidden; position: absolute; z-index: 1; border-bottom: 1px solid rgba(255,255,255,0.25);}
+.rsp {width: 1280px; height: 100%;}
+header.fix {position: fixed; height: 80px; overflow: hidden; z-index: 1;}
+header.on {height: 380px;}
+header.fix.on {height: 340px;}
+
+
+
+header #top_gnb {height: 40px; width: 100%; line-height: 40px; background: #0c347c; color: #fff; font-size: 0.8rem;}
+header #top_gnb .nav1 {display: inline-flex; position: absolute;}
+header #top_gnb .nav1 li a {display: block; border-left: 1px solid rgba(255,255,255,0.25); width: 160px; height: 40px; text-align: center; background: url(../images/icon_newwin.png) no-repeat right 16px center;}
+header #top_gnb .nav1 li a:hover {text-decoration: underline;}
+header #top_gnb .nav1 li:nth-child(1) a {background: none;}
+header #top_gnb .nav1 li:nth-child(2) a {padding-right: 10px;}
+header #top_gnb .nav1 li:nth-child(3) a {border-right: 1px solid rgba(255,255,255,0.25); background: url(../images/icon_newwin.png) no-repeat right 30px center; padding-right: 20px;}
+header #top_gnb .nav2 {display: inline-flex; position: absolute; right: 0;}
+header #top_gnb .nav2 li:last-child:before {content: "|"; margin: 0 10px;}
+header #top_gnb .nav2 li a:hover {text-decoration: underline;}
+
+
+
+header #main_menu {height: 80px; width: 100%;}
+header #main_menu .logo {padding-top: 20px; display: inline-block;}
+header #main_menu .nav1 {display: inline-flex; position: absolute; right: 0; line-height: 80px;}
+header #main_menu .nav1 li {padding: 0 30px; color: #fff; font-weight: 500; font-size: 1.1rem;}
+
+
+
+header #sub_menu {background: #f8f8f8; width:100%; height: 260px; color: #666; box-shadow: 2px 2px 2px rgb(0 0 0 / 80%); position: absolute;}
+header #sub_menu .wrap {width: 1280px;}
+header #sub_menu .wrap div {position: absolute; background: #f8f8f8; height: 260px; width: 100%;}
+header #sub_menu article {display: inline-flex; flex-direction: column; justify-content: space-between; align-items: center; height: 220px; padding: 20px 0; text-align: center;}
+header #sub_menu article h3 {color: #262a6a; font-size: 1.5rem; font-weight: bold;}
+header #sub_menu article img {height: 100px; width: 100px;}
+header #sub_menu .nav1 {display: inline-flex; align-items: center; position: absolute; left: 260px; top: 30px; width: 1000px; flex-wrap: wrap;}
+header #sub_menu .nav1 li {width: 204.75px; height: 36px; margin: 0 20px; border: 1px solid #dadada; box-sizing: border-box; background: url(../images/m_gnb_arr.png) no-repeat right 10px center #fff; background-size: 10px 10px; margin-bottom: 30px;}
+header #sub_menu .nav1 li a {display: block; padding: 5px 15px; font-weight: 500;}
+header #sub_menu .nav1 li a:hover {color: #0c4da2; background: url(../images/m_gnb_arr_on.png) no-repeat right 10px center #fff; background-size: 10px 10px;}
+header #sub_menu .nav2 {display: inline-flex; flex-direction: column; position: absolute; left: 300px; top: 80px;}
+header #sub_menu .nav2 li {list-style: disc;}
+header #sub_menu .nav2 li::marker {color: #dadada;}
+header #sub_menu .nav2 li a:hover {color: #0c4da2; text-decoration: underline;}
+header #sub_menu .nav3 {display: inline-flex; flex-direction: column; position: absolute; left: 546px; top: 80px;}
+header #sub_menu .nav3 li {list-style: disc;}
+header #sub_menu .nav3 li::marker {color: #dadada;}
+header #sub_menu .nav3 li a:hover {color: #0c4da2; text-decoration: underline;}
+header #sub_menu .box3 .nav1 li {margin-bottom: 120px;}
+
+section#main {background: url(../images/sub_visual01.jpg) no-repeat center/cover; height: 380px;}
+section#main .wrap {width: 100%; text-align: center; display: flex; flex-direction: column; align-items: center; color: #fff;}
+section#main h3 {margin-top: 200px; position: absolute; font-size: 48px; font-weight: 500; line-height: 1;}
+section#main p {margin-top: 280px;}
+
+section#sub_content {padding: 40px 0 100px;}
+section#sub_content .wrap {width: 1280px; display: flex;}
+
+section#sub_content .left_box {width: 235px; height: 508px; text-align: center;}
+section#sub_content .left_box h2 {font-size: 28px; color: #fff; background: url(../images/leftmenu_h2_bg.jpg) no-repeat; height: 130px; line-height: 130px;}
+section#sub_content .left_box .cont1 {border: 1px solid #dadada; margin-top: 2px; font-weight: 500;}
+section#sub_content .left_box .box1 {padding: 0; position: relative; cursor: pointer; border-bottom: 1px solid #dadada;}
+section#sub_content .left_box .box1.active {border: 2px solid #262a6a;}
+section#sub_content .left_box .box1 h3 {padding: 15px; text-align: left; font-weight: 500;}
+section#sub_content .left_box .box1 div {position: absolute; top: 4px; right: 10%; font-weight: 300; padding: 5px;}
+section#sub_content .left_box .box1 .minus {font-size: 50px; line-height: 0.7; display: none;}
+section#sub_content .left_box .box1 .plus {font-size: 25px; display: none;}
+section#sub_content .left_box .box1 div.active {display: block;}
+section#sub_content .left_box .cont1 > li:nth-child(n+2) {padding: 15px; cursor: pointer; transition: 0.25s all; border-bottom: 1px solid #dadada; text-align: left; color: #666;}
+section#sub_content .left_box .cont1 > li:hover {color: #262a6a;}
+section#sub_content .left_box .box2 {background: #f7f7f7; padding: 10px;}
+section#sub_content .left_box .box2 > li {text-align: left; padding: 5px 20px; font-size: 15px; font-weight: 500; position: relative; padding-left: 30px; color: #333;}
+section#sub_content .left_box .box2 > li:hover {text-decoration: underline;}
+section#sub_content .left_box .box2 > li:before {content: ""; background: #cecece; width: 8px; height: 2px; display: inline-block; position: absolute; top: 14px; left: 10px;}
+section#sub_content .left_box .box2 > li.active {text-decoration: underline; color: #262a6a;}
+section#sub_content .left_box h3.active {color: #262a6a;}
+
+section#sub_content .content {width: 990px; margin-left: auto;}
+section#sub_content .content .title {display: flex; justify-content: space-between; margin-bottom: 35px;}
+section#sub_content .content .title h3 {display: inline-block; color: #333; font-weight: 700; font-size: 30px;}
+section#sub_content .content .title ul {display: inline-block; display: flex;}
+section#sub_content .content .title ul li {color: #888; font-size: 14px;}
+section#sub_content .content .title ul li:first-child i {color: #000;}
+section#sub_content .content .title ul li:nth-child(n+2) i {margin: 0 6px; color: #ddd;}
+section#sub_content .content .txt_area {padding: 50px;}
+section#sub_content .content .txt_area ul.tabs {display: inline-flex; font-size: 18px; font-weight: 500; color: #888; line-height: 1.5; margin-bottom: 20px; position: relative;}
+section#sub_content .content .txt_area ul.tabs li.tab1 {margin-right: 20px; border-bottom: 2px solid #888; cursor: pointer;}
+section#sub_content .content .txt_area ul.tabs li.tab2 {border-bottom: 2px solid #888; cursor: pointer;}
+section#sub_content .content .txt_area ul.tabs li.active {color: #121212; border-bottom: 2px solid #121212;}
+section#sub_content .content .txt_area dl.tab1 {padding: 20px; opacity: 0; visibility: hidden; position: absolute; transition: .3s;}
+section#sub_content .content .txt_area dl.tab1.active {opacity: 1; visibility: visible;}
+section#sub_content .content .txt_area dl dt{font-size: 24px; color: #121212; margin-bottom: 20px;}
+section#sub_content .content .txt_area dl dd{color: #666; word-break: keep-all; white-space: pre-line; margin-bottom: 20px;}
+section#sub_content .content .txt_area dl.tab2 {padding: 20px; opacity: 0; visibility: hidden; position: absolute; transition: .3s;}
+section#sub_content .content .txt_area dl.tab2.active {opacity: 1; visibility: visible;}
+
+
+section#quick_menu .wrap {position: relative;}
+section#quick_menu .aside {position: absolute; top: 0px; right: -200px; width: 96px; text-align: center; background: #fff; box-shadow: 3px 3px 3px rgb(0 0 0 / 25%); font-size: 0.8rem; height: 500px; z-index: 2;}
+section#quick_menu .aside p {background: #262a6a; color: #fff; display: block; height: 40px; line-height: 40px; font-weight: 400; font-size: 0.7rem;}
+section#quick_menu .aside ul {display: flex; flex-direction: column; padding: 15px 0;}
+section#quick_menu .aside ul li {margin-bottom: 20px;}
+section#quick_menu .aside ul li a {display: flex; flex-direction: column; align-items: center;}
+section#quick_menu .aside ul li a img {padding-bottom: 6px;}
+section#quick_menu .aside ul li a span {color: #0c4da2;}
+
+
+footer {border-top: 1px solid #dadada;}
+footer .wrap {width: 1280px; height: 83px; padding: 35px 0 45px; display: flex; justify-content: space-between; color: #666;}
+footer .wrap .box1 img {padding-right: 30px;}
+footer .wrap .box2 {display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;}
+footer .wrap .box2 ul {display: flex; font-weight: 300;}
+footer .wrap .box2 ul li {margin-right: 20px; cursor: pointer;}
+footer .wrap .box2 address p {font-size: 0.9rem; font-weight: 400;}
+footer .wrap .box2 address p.copy {font-size: 0.8rem; font-weight: 300;}
+footer .wrap .box3 ul {width: 170px; display: flex; justify-content: space-between;}
+footer .wrap .box3 ul li img {cursor: pointer;}
+

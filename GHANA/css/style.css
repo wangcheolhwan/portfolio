@@ -1,0 +1,84 @@
+body {font: 16px 'NanumSquareNeo-Variable';}
+
+header .wrap {width: 100%;}
+header .wrap h1 {font-size: 18px; font-weight: 600; color: #222; background: #fff; height: 100px; display: flex; justify-content: flex-end; border-bottom: 1px solid #222;}
+header .wrap h1 a img {position: absolute; left: 20px; top: 30px;}
+header .wrap .nav1 {display: flex; height: 97px; margin-right: 250px; padding-bottom: 10px;}
+header .wrap .nav1 li {display: flex; align-items: center; height: 100%; margin-left: 50px;}
+header .wrap .nav1 li:hover {color: #dcad17; border-bottom: 2px solid #dcad17;}
+header .wrap .nav2 {display: flex; position: absolute; right: 50px; top: 40px; font-size: 16px;}
+header .wrap .nav2 li {margin-left: 20px;}
+header .wrap .nav2 li:hover {color: #dcad17;}
+header video {position: absolute; width: 100vw; top: 100px; z-index: -1; height: 1000px; object-fit: cover;}
+
+#main {height: 1000px; color: #fff; font-size: 30px; font-weight: 700; text-align: start; line-height: 1.6; font-style: 'Nanum Gothic'; padding-left: 200px;}
+#main .wrap {width: 100%; height: 1000px;}
+#main h3 {padding-top: 500px; font-size: 40px; font-weight: 900;}
+#main span {padding-top: 50px; display: block;}
+#main a {margin-top: 50px; border-radius: 50px; padding: 15px 30px; font-size: 16px; background: #fff; color: #222; transition: .5s; display: inline-block;}
+#main a:hover {background: #dcad17;}
+
+#sub1 img {width: 450px; height: 530px; border-radius: 50px; object-fit: cover;}
+#sub1 .wrap {width: 100%; display: flex; flex-direction: column; align-items: flex-end;}
+#sub1 .wrap .cont1 {width: 50%; position: fixed; left: 200px; top: 100px; z-index: -99;}
+#sub1 .wrap .cont1 dl {padding-bottom: 50px;}
+#sub1 .wrap .cont1 dl dt {font-size: 50px; font-weight: 900; padding-bottom: 20px;}
+#sub1 .wrap .cont1 dl dd {font-size: 30px;}
+#sub1 .wrap .cont2 {width: 35%;}
+#sub1 .wrap .cont2 dl {padding-bottom: 100px; padding-top: 30px; width: 450px;}
+#sub1 .wrap .cont2 dl dt {font-size: 30px; font-weight: 700; padding-bottom: 20px;}
+#sub1 .wrap .cont2 dl dd {font-size: 20px;}
+#sub1 .wrap .cont2 img{margin-top: 100px;}
+#sub1 .wrap .cont3 {width: 30%; padding-left: 50px; padding-right: 30px;}
+#sub1 .wrap .cont3 dl {padding-bottom: 100px; padding-top: 30px;}
+#sub1 .wrap .cont3 dl dt {font-size: 30px; font-weight: 700; padding-bottom: 20px;}
+#sub1 .wrap .cont3 dl dd {font-size: 20px;}
+#sub1 .wrap .cont3 img{width: 550px; height: 300px;}
+#sub1 .wrap .cont4 {width: 40%;}
+#sub1 .wrap .cont4 dl {padding-bottom: 100px; padding-top: 30px; width: 390px;}
+#sub1 .wrap .cont4 dl dt {font-size: 30px; font-weight: 700; padding-bottom: 20px;}
+#sub1 .wrap .cont4 dl dd {font-size: 20px;}
+#sub1 .wrap .cont4 img{width: 390px; height: 400px;}
+
+
+#sub2 {background: url(../images/12.07/sub2bg.jpg); color: #fff; font-size: 20px;}
+#sub2 .wrap {width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 100px;}
+#sub2 .wrap > p {font-size: 50px; font-weight: 900;}
+#sub2 .wrap .box1 {width: 70%; margin: 0 auto; display: flex; justify-content: space-between; padding-top: 100px; padding-bottom: 300px;}
+#sub2 .wrap .box1 .cont1 {width: 45%; height: 400px; border-top: 3px solid #fff; border-bottom: 1px solid #fff; position: relative;}
+#sub2 .wrap .box1 .cont1 p {padding-top: 50px; font-size: 30px; font-weight: 700;}
+#sub2 .wrap .box1 .cont1 a {margin-top: 20px; display: inline-block; color: #dcad17;}
+#sub2 .wrap .box1 .cont1 img {width: 300px; object-fit: cover; position: absolute; bottom: 0px; right: 0px;}
+#sub2 .wrap .box1 .cont2 {width: 45%; height: 400px; border-top: 3px solid #fff; border-bottom: 1px solid #fff; position: relative;}
+#sub2 .wrap .box1 .cont2 p {padding-top: 50px; font-size: 30px; font-weight: 700;}
+#sub2 .wrap .box1 .cont2 a {margin-top: 20px; display: inline-block; color: #dcad17;}
+#sub2 .wrap .box1 .cont2 img {width: 250px; object-fit: cover; position: absolute; bottom: 0; right: 0;}
+
+#sub3 {background: #f6f6f6; height: 900px;}
+#sub3 .wrap {width: 90%; padding-top: 100px;}
+#sub3 .wrap > p {font-size: 40px; font-weight: 800; color: #999; line-height: 1.6;}
+#sub3 .wrap > p span {color: #222;}
+#sub3 .wrap .cont1 {width: 100%; display: flex; justify-content: space-between; padding-top: 50px;}
+#sub3 .wrap .cont1 .box1 {width: calc((100% - 2px) / 3); height: 500px; display: flex; justify-content: center; align-items: center; background: url(../images/main/building.jpg) no-repeat center/cover; transition: .5s;}
+#sub3 .wrap .cont1 .box1:hover {width: 50%;}
+#sub3 .wrap .cont1 .box1 p {color: #fff; font-size: 30px; font-weight: 700;}
+#sub3 .wrap .cont1 .box2 {width: calc((100% - 2px) / 3); display: flex; justify-content: center; align-items: center; background: url(../images/main/intro.jpg) no-repeat center/cover; transition: .5s;}
+#sub3 .wrap .cont1 .box2:hover {width: 50%;}
+#sub3 .wrap .cont1 .box2 p {color: #fff; font-size: 30px; font-weight: 700;}
+#sub3 .wrap .cont1 .box3 {width: calc((100% - 2px) / 3); display: flex; justify-content: center; align-items: center; background: url(../images/main/support.jpg) no-repeat center/cover; transition: .5s;}
+#sub3 .wrap .cont1 .box3:hover {width: 50%;}
+#sub3 .wrap .cont1 .box3 p {color: #fff; font-size: 30px; font-weight: 700;}
+
+#sub4 {padding: 100px 0 200px 0; background: #fff;}
+#sub4 .wrap {width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#sub4 .wrap p {font-size: 50px; font-weight: 900; padding-bottom: 80px;}
+#sub4 .wrap .cont1 {height: 130px; width: 100%; display: flex; justify-content: center; border-top: 1px solid #666; border-bottom: 1px solid #666; align-items: center;}
+#sub4 .wrap .cont1 i {position: absolute; font-size: 50px; top: 180px;}
+#sub4 .wrap .cont1 a:nth-of-type(1) i {left: 10px;}
+#sub4 .wrap .cont1 a:nth-of-type(2) i {right: 0;}
+#sub4 .wrap .cont1 .box1 {width: 80%; display: flex; justify-content: space-between;}
+
+footer {height: 150px; background: #f6f6f6;}
+footer .wrap {width: 95%;}
+footer .wrap img {position: absolute; right: 0; top: 50px;}
+footer .wrap address {position: absolute; left: 0; top: 50px; line-height: 1.6; font-weight: 600; color: #666;}
