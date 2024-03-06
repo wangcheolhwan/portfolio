@@ -722,11 +722,63 @@ button.content-switch::before {
 	opacity: 0.5;
 }
 @media (max-width: 1600px) {
-.slide:first-child .box .pic {
-	width: 350px;
-	height: 250px;
+	.slide:first-child .box .pic {
+		width: 350px;
+		height: 250px;
+	}
 }
+@media (max-width: 900px) {
+	.slide:first-child .box .pic {
+		display: none;
+	}
+	.js .img-dragger-large .slide h2 {
+		left: 50% !important;
+		transform: translateX(-50%);
+		font-size: 40px;
+	}
+	.slide:first-child article h3 {
+		font-size: 30px;
+	}
+	.slide:first-child article p {
+		font-size: 20px;
+	}
+	.slide:first-child article {
+		text-align: center;
+	}
 
+	.slide:first-child .box {
+		left: 50%;
+		top: 80%;
+		transform: translateX(-50%);
+	}
+	.slide:first-child .box p {
+		white-space: nowrap;
+	}
+
+	button.content-switch {
+		width: 100px;
+		padding: 10px;
+		top: 97%;
+	}
+	.pages .content h2 {
+		padding: 70px 10px 0;
+	}
+	.pages .content.show p {
+		display: flex;
+		justify-content: space-between;
+		width: 250px;
+		font-size: 12px;
+		padding: 0;
+		max-width: none;
+		margin: 20px auto;
+	}
+	.pages .content p.related a {
+		padding: 5px;
+	}
+
+	.js .img-dragger-large .slide h2 {
+		font-size: 30px;
+	}
 }
 
 .slide:first-child .box p {
