@@ -728,6 +728,9 @@ button.content-switch::before {
 	}
 }
 @media (max-width: 900px) {
+	.slide[data-content="content-1"] .img-wrap img {
+		display: none;
+	}
 	.slide:first-child .box .pic {
 		display: none;
 	}
