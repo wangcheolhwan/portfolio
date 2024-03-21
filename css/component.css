@@ -489,7 +489,10 @@ button.content-switch::before {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	}
+}
+.pages .content p.related.position_center {
+	justify-content: center;
+}
 
 .pages .content p.related {
 	max-width: 50%;
